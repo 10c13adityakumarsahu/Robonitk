@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+body{
+    background-image: url('./assets/bg-about1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 98.9vw;
+    height: 100vh;
+    display:flexbox;
+    background-position: center;
+    background-attachment: fixed;
+  }
+@media (max-width:500px){
+    body{
+    background-image: url('./assets/bg-about1.jpg');
+    background-size: fill;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    background-position-x: center;
+    }
+}
+.back{
+    z-index: -1;
+    position: absolute;
+    width: 100vw;
+    scroll-behavior: inherit;
+    height: 100vh;
+}
+#logo-img{
+    border-radius: 50%;
+    width:30%; 
+    height:50%;
+}
+nav{
+background-image:linear-gradient(37deg, #302355, #130347); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+display:inline-block;
+direction: ltr;
+align-items: center;
+justify-content: center;
+z-index: 1;
+}
+
+a {
+    position: relative;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  
+a:hover {
+    color: whitesmoke;
+  }
+  
+a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    color:whitesmoke ;
+    background-color: #dad5d5;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+a:hover::before {
+    transform: scaleX(1);
+    }
+  footer{
+    background-color: black; 
+
+    display:flexbox;
+    text-align: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    h3{
+        color: white;
+        font-family: "Kalam",sans-serif;
+       
+    }
+  }
+  @media(max-width:500px){
+    footer{
+      width: 100%;
+        display: block;
+    }
+    footer>.footer-target{
+      display: flex;
+      justify-content: center;
+      scale: 50%;
+    }
+  }
+  footer>.footer-target{
+    display: flex;
+    justify-content: center;
+  }
+  .footer-target>.About{
+    text-decoration: none;
+    display: inline-flexbox;
+    color: antiquewhite;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    a{
+      font-size: larger;
+      text-decoration: none;
+      color: whitesmoke;
+    }
+    a:hover{
+      color: green;
+    }
+  }
+.footer-target>.Contact-Us{
+  text-decoration: none;
+  display: inline-flexbox;
+  color: antiquewhite;
+  margin-right: 3vw;
+  margin-left: 3vw;
+  a{
+    font-size: larger;
+    text-decoration: none;
+    color: whitesmoke;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  a:hover{
+    color: green;
+  }
+}
+footer>h3{
+  color: #6449b0;
+}
+.footer-target>.Social{
+  text-decoration: none;
+  display: inline-flexbox;
+  color: antiquewhite;
+  margin-right: 3vw;
+  margin-left: 3vw;
+  a{
+    font-size: larger;
+    text-decoration: none;
+    color: whitesmoke;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  a:hover{
+    color: green;
+  }
+}
+.footer-target>.endlogo>img{
+  border-radius:50%;
+  height: 10em;
+  mix-blend-mode: difference;
+  display: flexbox;
+  text-align: center;
+  justify-content: center;
+  color: rgb(218, 212, 212);
+  border: 3px solid #6449b0;
+}
+.footer-target>.endlogo>p{
+  color: grey;
+  padding-top: 20px;
+  font-family: cursive,sans-serif;
+}
+.members>.core-team>ul>li>{
+    height: 10vw;
+    width: 15vw;
+    background-color: rgb(64, 63, 63);
+    color: white;
+}
