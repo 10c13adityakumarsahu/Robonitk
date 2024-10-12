@@ -40,7 +40,7 @@ body {
   background-attachment: fixed;
 }
 
-@media (max-width:500px) {
+@media (max-width:700px) {
   body {
     background-image: url('./assets/bg-about1.jpg');
     background-size: fill;
@@ -176,9 +176,9 @@ footer {
 
   }
 }
-@media(max-width:500px){
+@media(max-width:700px){
   .content>.our-aim,.content>.our-story,.content>.our-vision{
-    margin-left: 13vw;
+    margin-left: 15vw;
     width: 70vw;
     border-radius: 1%;
     padding-left: 2vw;
@@ -186,7 +186,7 @@ footer {
   }
 }
 
-@media(max-width:500px) {
+@media(max-width:700px) {
   footer {
     width: 100%;
     display: block;

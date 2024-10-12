@@ -3,7 +3,7 @@
     padding: 0;
 }
 .video{
-    width: 99vw;
+    width: 99.9vw;
     height: auto;
     display: flexbox;
     left: 3px;
@@ -80,7 +80,7 @@ footer {
 
   }
 }
-@media(max-width:500px){
+@media(max-width:700px){
   .content>.our-aim,.content>.our-story,.content>.our-vision{
     margin-left: 13vw;
     width: 70vw;
@@ -90,7 +90,7 @@ footer {
   }
 }
 
-@media(max-width:500px) {
+@media(max-width:700px) {
   footer {
     width: 100%;
     display: block;
