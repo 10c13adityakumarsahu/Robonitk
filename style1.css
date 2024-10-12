@@ -175,9 +175,6 @@ footer {
     font-family: "Kalam", sans-serif;
 
   }
-  .endlogo{
-    margin-right: 20vw;
-  }
 }
 @media(max-width:500px){
   .content>.our-aim,.content>.our-story,.content>.our-vision{
@@ -195,12 +192,19 @@ footer {
     display: block;
     border-top-right-radius: 3%;
     border-top-left-radius: 3%;
+    .endlogo{
+      margin-bottom: 5vh;
+      margin-top: 5vh;
+    }
   }
 
   footer>.footer-target {
     display: flex;
     justify-content: center;
-    scale: 50%;
+    scale: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -213,8 +217,7 @@ footer>.footer-target {
   text-decoration: none;
   display: flexbox;
   color: antiquewhite;
-  margin-right: 3vw;
-  margin-left: 3vw;
+  margin-bottom: 3vh;
 
 
   a {
@@ -234,9 +237,9 @@ footer>.footer-target {
   text-decoration: none;
   display: inline-flexbox;
   color: antiquewhite;
-  margin-right: 3vw;
-  margin-left: 3vw;
-
+  margin-right: 5vw;
+  margin-left: 5vw;
+  margin-bottom: 3vh;
   a {
     font-size: larger;
     text-decoration: none;
@@ -258,8 +261,11 @@ footer>h3 {
   text-decoration: none;
   display: inline-flexbox;
   color: antiquewhite;
-  margin-right: 3vw;
-  margin-left: 3vw;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  word-wrap: normal;
+  margin-bottom: 3vh;
+  margin-top: 3vh;
 
   a {
     font-size: larger;
@@ -267,6 +273,7 @@ footer>h3 {
     color: whitesmoke;
     padding-top: 5px;
     padding-bottom: 5px;
+   
   }
 
   a:hover {
@@ -275,7 +282,6 @@ footer>h3 {
 }
 
 .footer-target>.endlogo{
-  position: ;
   img{
   border-radius: 50%;
   height: 10em;
@@ -285,6 +291,8 @@ footer>h3 {
   justify-content: center;
   color: rgb(218, 212, 212);
   border: 3px solid #6449b0;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 }
 
@@ -294,12 +302,6 @@ footer>h3 {
   font-family: cursive, sans-serif;
 }
 
-@media(max-width:500px) {
-  .footer-target>.About>#carrer{
-    font-size: smaller;
-  }
-  
-}
 /*Scroll Handling*/
 ::-webkit-scrollbar{
   width: 0.5vw;
