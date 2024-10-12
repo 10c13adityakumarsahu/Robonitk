@@ -98,7 +98,8 @@ a:hover::before {
     }
   footer{
     background-color: black; 
-
+    border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
     display:flexbox;
     text-align: center;
     justify-content: center;
@@ -114,6 +115,8 @@ a:hover::before {
     footer{
       width: 100%;
         display: block;
+        border-top-right-radius: 3%;
+    border-top-left-radius: 3%;
     }
     footer>.footer-target{
       display: flex;
