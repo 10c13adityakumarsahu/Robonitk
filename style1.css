@@ -175,6 +175,9 @@ footer {
     font-family: "Kalam", sans-serif;
 
   }
+  .endlogo{
+    margin-right: 20vw;
+  }
 }
 @media(max-width:500px){
   .content>.our-aim,.content>.our-story,.content>.our-vision{
@@ -208,15 +211,18 @@ footer>.footer-target {
 
 .footer-target>.About {
   text-decoration: none;
-  display: inline-flexbox;
+  display: flexbox;
   color: antiquewhite;
   margin-right: 3vw;
   margin-left: 3vw;
+
 
   a {
     font-size: larger;
     text-decoration: none;
     color: whitesmoke;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   a:hover {
@@ -268,7 +274,9 @@ footer>h3 {
   }
 }
 
-.footer-target>.endlogo>img {
+.footer-target>.endlogo{
+  position: ;
+  img{
   border-radius: 50%;
   height: 10em;
   mix-blend-mode: difference;
@@ -278,6 +286,7 @@ footer>h3 {
   color: rgb(218, 212, 212);
   border: 3px solid #6449b0;
 }
+}
 
 .footer-target>.endlogo>p {
   color: grey;
@@ -285,6 +294,12 @@ footer>h3 {
   font-family: cursive, sans-serif;
 }
 
+@media(max-width:500px) {
+  .footer-target>.About>#carrer{
+    font-size: smaller;
+  }
+  
+}
 /*Scroll Handling*/
 ::-webkit-scrollbar{
   width: 0.5vw;
