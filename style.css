@@ -9,7 +9,7 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .video{
-    width: 99.9vw;
+    width: 99.5vw;
     height: auto;
     display: flexbox;
     left: 3px;
@@ -223,4 +223,13 @@ footer>h3 {
 ::-webkit-scrollbar-thumb{
   background-color: rgba(0, 0, 0, 0.5);
   height: 15px;
+}
+.announcements{
+  background-color: #6449b0;
+  position: fixed;
+  width: 99.5vw;
+  a{
+    color: white;
+    text-decoration: none;
+  }
 }
